@@ -1,0 +1,247 @@
+<!doctype html>
+
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>جبهة الدبلوماسية المصرية — الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+
+  <link rel="icon" href="WhatsApp Image 2025-10-06 at 01.32.50_4c413a33.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#1f1f1f; 
+      --accent:#474747; 
+      --muted:#6b7280;
+      --bg:#000000;
+      --card:#ffffff;
+      font-family: 'Almarai', Tahoma, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#ffffff;line-height:1.5}
+    header{background:linear-gradient(90deg,var(--primary),rgb(201, 171, 0));color:white;padding:18px 20px; position:relative;width: 100%; z-index: 1;}
+    .container{max-width:1100px;margin:0px auto;padding:18px;position: relative;z-index: 0;}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:56px;width:56px;object-fit:contain;border-radius:8px;background:white;padding:6px}
+    nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:14px;font-weight:700}/* Hero */
+.hero{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center;padding:36px 0}
+.hero .intro h1{font-size:32px;margin:0 0 8px}
+.hero .intro p{color:var(--muted);margin:0 0 16px}
+.cta{display:inline-block;background:var(--accent);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+.stats{display:flex;gap:12px;margin-top:12px}
+.stat{background:rgba(255,255,255,0.08);padding:10px;border-radius:8px}
+
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(11,34,48,0.06)}
+.card h3{margin:0 0 8px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+
+/* Contact */
+form{display:grid;gap:8px}
+input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6eef2;font-size:14px}
+button{background:var(--primary);color:white;border:none;padding:10px;border-radius:8px;font-weight:700}
+
+footer{padding:24px 0;color:var(--muted);font-size:14px}
+
+/* Responsive */
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:520px){
+  nav a{display:none}
+  .brand img{height:46px;width:46px}
+  .grid{grid-template-columns:1fr}
+  .gallery img{height:90px}
+}
+.he1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.he1 ul{
+    display: flex;
+    list-style: none;
+gap: 10px;
+text-decoration: none;
+margin-left: 100px;
+font-size: 30px;
+margin-bottom: 15px;
+}
+.he1 a{
+color:var(--color);
+padding: 10px;
+border-radius:60% ;
+}
+.he1 i{
+width:30px ;
+}
+.he1 a:hover{
+    color:white;
+    background-color: var(--color);
+    box-shadow: 0 0 5px var(--color),0 0 25px var(--color),0 0 50px var(--color),0 0 200px var(--color);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <!-- ضع هنا رابط الشعار الرسمي -->
+        <img src="WhatsApp Image 2025-10-06 at 01.32.50_4c413a33.jpg" alt="لوجو جبهة الدبلوماسية المصرية">
+        <div>
+          <div style="font-weight:800;font-size:18px">جبهة الدبلوماسية المصرية</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.85)">تفكير دبلوماسي — عمل شبابي</div>
+        </div>
+      </div>
+      <nav aria-label="القائمة الرئيسية">
+        <a href="#about">عن الجبهة</a>
+        <a href="#news">الأخبار</a>
+        <a href="#programs">البرامج</a>
+        <a href="#gallery">معرض الصور</a>
+        <a href="#contact">اتصل بنا</a><select id="governorate"  >
+  <option value="0">المحافظات</option>
+  <option value="القاهرة">القاهرة</option>
+  <option value="الجيزة">الجيزة</option>
+  <option value="القليوبية">القليوبية</option>
+  <option value="الإسكندرية">الإسكندرية</option>
+  <option value="البحيرة">البحيرة</option>
+  <option value="مطروح">مطروح</option>
+  <option value="كفر الشيخ">كفر الشيخ</option>
+  <option value="الدقهلية">الدقهلية</option>
+  <option value="الغربية">الغربية</option>
+  <option value="المنوفية">المنوفية</option>
+  <option value="الشرقية">الشرقية</option>
+  <option value="بني سويف">بني سويف</option>
+  <option value="الفيوم">الفيوم</option>
+  <option value="المنيا">المنيا</option>
+  <option value="أسيوط">أسيوط</option>
+  <option value="سوهاج">سوهاج</option>
+  <option value="قنا">قنا</option>
+  <option value="الأقصر">الأقصر</option>
+  <option value="أسوان">أسوان</option>
+  <option value="البحر الأحمر">البحر الأحمر</option>
+  <option value="الوادي الجديد">الوادي الجديد</option>
+  <option value="شمال سيناء">شمال سيناء</option>
+  <option value="جنوب سيناء">جنوب سيناء</option>
+  <option value="السويس">السويس</option>
+  <option value="الإسماعيلية">الإسماعيلية</option>
+  <option value="بورسعيد">بورسعيد</option>
+  <option value="دمياط">دمياط</option>
+</select>
+      </nav>
+    </div>
+  </header>  <main class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="intro">
+        <h1 id="hero-heading">جبهة الدبلوماسية المصرية — صوت الشباب</h1>
+        <p>منصة لتمكين الشباب، نشر الوعي الدبلوماسي، وتنظيم فعاليات مباشرة ومبادرات تعليمية للتواصل مع المجتمع والدبلوماسية.</p>
+        <a class="cta" href="#programs">انضم للبرامج</a>
+        <div class="stats" role="list">
+          <div class="stat" role="listitem"><strong>24</strong><div style="font-size:12px">فعالية هذا العام</div></div>
+          <div class="stat" role="listitem"><strong>3,200</strong><div style="font-size:12px">مشارك</div></div>
+        </div>
+      </div><aside class="card" aria-labelledby="latest-title">
+    <h3 id="latest-title">أحدث الأخبار</h3>
+    <article>
+      <h4 style="margin:8px 0 6px">لقاء مع سفراء</h4>
+      <p>نظمنا أمس ورشة عمل بسيطة مع سفراء من دول مختلفة للتواصل حول فرص الشباب.</p>
+    </article>
+    <hr style="margin:12px 0;border:none;border-top:1px dashed #eee">
+    <a href="#news" style="text-decoration:none;font-weight:700;color:var(--primary)">عرض كل الأخبار »</a>
+  </aside>
+</section>
+
+<section id="about" class="card" style="margin-top:18px">
+  <h2>عن الجبهة</h2>
+  <p>جبهة شبابية مستقلة تعمل على تقوية قدرات الشباب المصري في مجالات الدبلوماسية، التواصل الدولي، والعمل المدني. نهدف لتدريب قادة المستقبل وربطهم بفرص حقيقية.</p>
+</section>
+
+<section id="news" style="margin-top:18px">
+  <h2>أخبار وأنشطة</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>ورشة عمل: فن الحديث الدبلوماسي</h3>
+      <p>ورشة تدريبية عملية لمدة يومين للمشاركين الراغبين في تطوير مهارات الخطاب والتفاوض.</p>
+    </div>
+    <div class="card">
+      <h3>مسابقة المقالات الدولية</h3>
+      <p>دعوة للشباب لكتابة مقالات قصيرة حول مصر في العالم، والفرز للفائزين بعروض تدريب.</p>
+    </div>
+    <div class="card">
+      <h3>قافلة التوعية الجامعية</h3>
+      <p>سلسلة زيارات لجامعات مصرية لتعريف الطلاب بالدبلوماسية العامة وفرص التطوع.</p>
+    </div>
+  </div>
+</section>
+
+<section id="programs" style="margin-top:18px" class="card">
+  <h2>البرامج</h2>
+  <p>برامجنا تشمل تدريب قيادي، تبادل ثقافي، ومؤتمرات صغرى. لكل برنامج صفحة مفصلة وروابط للتسجيل.</p>
+</section>
+
+<section id="gallery" style="margin-top:18px">
+  <h2>معرض الصور</h2>
+  <div class="gallery">
+    <img src="WhatsApp Image 2025-10-18 at 21.23.09_d0e2255a.jpg" alt="صورة فعالية 1">
+    <img src="WhatsApp Image 2025-10-18 at 21.23.09_d5211c7e.jpg" alt="صورة فعالية 2">
+    <img src="WhatsApp Image 2025-10-18 at 21.23.09_ea95250c.jpg" alt="صورة فعالية 3">
+    <img src="WhatsApp Image 2025-10-18 at 21.23.10_b141b613.jpg" alt="صورة فعالية 4">
+  </div>
+</section>
+
+<section id="contact" style="margin-top:18px" class="card">
+  <h2>اتصل بنا</h2>
+  <form aria-label="نموذج الاتصال">
+    <input type="text" placeholder="الاسم الكامل" required>
+    <input type="email" placeholder="البريد الإلكتروني" required>
+    <select>
+      <option>أريد الانضمام للعمل التطوعي</option>
+      <option>أريد الاشتراك في ورشة</option>
+      <option>اقتراح / استفسار</option>
+    </select>
+    <textarea rows="4" placeholder="اكتب رسالتك هنا"></textarea>
+    <button type="submit">أرسل</button>
+  </form>
+</section>
+
+<footer style="margin-top:18px">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>© جبهة الدبلوماسية المصرية — جميع الحقوق محفوظة</div>
+      <div>
+        تواصل معنا: <strong>contact@egyptdiplomacy.org</strong>
+      </div>
+         <div class="he1">
+            <ul>
+    <li><a href=""style="--color: #0072b1;"><i class="fa-brands fa-linkedin-in"  ></i></a></li>
+   <li><a href=""  style="--color: #e1306c;" ><i class="fa-brands fa-instagram " ></i></a></li>
+    <li><a href=""style="--color: #ff0050;"><i class="fa-brands fa-tiktok" ></i></a></li>
+    <li><a href="https://www.facebook.com/share/1Enr5huNeW/" style="--color: #4267b2;"><i class="fa-brands fa-facebook-f"style="width: 25px; margin-right:6px;"></i></a></li>
+</ul>
+        
+    </div>
+    </div>
+  </div>
+
+</footer>
+  </main>
+    <script>
+    // سكربت بسيط لجعل النموذج لا يعيد تحميل الصفحة عند الإرسال (نموذج تجريبي)
+    document.querySelectorAll('form').forEach(f => {
+      f.addEventListener('submit', e => {
+        e.preventDefault();
+        alert('شكرًا! تم إرسال رسالتك (تجريبي)');
+        f.reset();
+      });
+    });
+  </script></body>
+</html>
